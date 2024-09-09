@@ -1,0 +1,27 @@
+header {
+    background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(29, 24, 87, 0.946));
+    color: antiquewhite;
+}
+
+header nav li a{
+    color: aliceblue;
+}
+
+.container-higth {
+    background-color: rgba(54, 54, 53, 0.16);
+}
+
+footer {
+    background-color: rgb(5, 71, 122);
+    color: antiquewhite;
+}
+
+
+form button:hover {
+    background-color: #3c6ca7;
+}
+
+
+footer li, a{
+    color: #fff;
+}

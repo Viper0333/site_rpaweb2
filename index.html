@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rpa Web</title>
+    <link rel="shortcut icon" href="imagens/RW.ico" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bodylefth.css">
+    <link rel="stylesheet" href="bodyhigth.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('imagens/ImagemFundo.png');
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center; /* Centraliza a imagem no container */
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <h1>Rpa Web</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <!----------------Botao de cadastro---------------------->
+    
+    <div class="Janela_modal" id="Janela_modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h3>Formulário de Automação</h3>
+                <form>
+                    <input type="text" placeholder="Seu nome" required /> <!-- required vai mostrar os campos que sao obrigatórios-->
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <input type="tel" placeholder="Seu telefone de contato"/>
+                    <textarea placeholder="Descreva sua necessidade de automação" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+    </div>
+
+        <script src="script.js"></script> <!--aperta ctrl e clica em script.js-->
+    <!-- ----------------------------------------------- -->
+
+
+    <div class="container" id="index">
+        <div class="container-left">
+            <div class="display-left">
+                <div class="store-front-container">
+                    <img src="Imagens/ambiente rpa.jpg" alt="foto do ambiente rpa">
+                </div>
+                <div class="btn-container">
+                    <div onclick="abrirModal()" class="btn">Solicitar Automação Rpa</div>
+                </div>
+            </div>
+        </div>
+        <div class="display-higth">
+            <div>
+                <h1>Nossos Serviços </h1>
+                <ul class="textservice">
+                    Se você deseja otimizar processos e liberar sua equipe de tarefas repetitivas, a automação RPA (Robotic Process Automation) é a solução ideal. Eu ofereço soluções personalizadas para automatizar tarefas como processamento de dados, integração de sistemas e geração de relatórios, permitindo que seu negócio funcione de forma mais rápida, eficiente e sem erros. Com robôs de software trabalhando 24 horas, você reduz custos, aumenta a produtividade e elimina falhas humanas. Vamos conversar e transformar seus processos com automação!
+                </ul>
+                
+                <li>Automation anywhere</li>
+                <li>Python</li>
+                <li>Power Automate</li>
+                <li>Uipath</li>
+                
+                <div class="social-links" id="asd">
+                    <div class="rede">
+                        <h3>Nos acompanhe</h3>
+                        <li>
+                            <a href="#" title="Siga-nos no Instagran">
+                                <img src="imagens/instagram.png" alt="Logo do instagran" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="imagens/linkedin (1).png" alt="Logo do Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youttube">
+                                <img src="imagens/twitter.png" alt="Logo do youtube" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youttube">
+                                <img src="imagens/whatsapp.png" alt="Logo do youtube" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youttube">
+                                <img src="imagens/youtube.png" alt="Logo do youtube" />
+                            </a>
+                        </li>
+                    </div>
+                    <div class="address">
+                        <h3>Venha ate nós</h3>
+                        <p>
+                            Rua Maria Aparecida 55, Bom Jesus Contagem
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li>
+                    &copy; RPA WEB - Todos direitos reservados - 2024    
+                </li>
+                <li> <!--Listagem de links nao ordenado-->
+                    <a href="#about">Termos de serviço</a> <!--se nao tem o link coloca #-->
+                </li>
+                <li> <!--Listagem de links nao ordenado-->
+                    <a href="#about">Politica de privacidade</a> <!--se nao tem o link coloca #-->
+                </li>
+            </ul>
+                
+        </div>
+    </footer>
+</body>
+</html>

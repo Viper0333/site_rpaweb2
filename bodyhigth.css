@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#index .display-higth{
+    width: 50%;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 20px
+}
+
+.display-higth h1 {
+    text-align: center;
+    margin:16px;
+}
+
+.display-higth li {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.textservice {
+    text-align: justify;
+    text-decoration: none;
+}
+
+.rede li {
+    display: inline;
+    margin-top: 16px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between; /* Para distribuir o espaço entre os elementos */
+    margin-top: 50px;
+}
+
+.rede, .address {
+    flex: 1; /* Faz com que os dois elementos ocupem o mesmo espaço */
+    margin: 0 20px /* Adiciona um espaçamento horizontal entre as colunas */
+}
+
+.rede li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.rede img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links h3 {
+    margin: 16px auto;
+}
+
+.address h3 {
+    margin-top: 16px;
+}
