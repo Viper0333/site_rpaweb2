@@ -21,7 +21,30 @@ form button:hover {
     background-color: #3c6ca7;
 }
 
-
 footer li, a{
     color: #fff;
+}
+
+.historia {
+    color: #c3c8c9;
+    background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(14, 77, 33, 0.946));
+}
+
+.historia h1 {
+    color: #c3c8c9;
+}
+
+
+.missao {
+    color: #c3c8c9;
+    background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(14, 77, 33, 0.946));
+}
+
+.missao h1 {
+    color: #c3c8c9;
+}
+
+.tagprojects {
+    background:linear-gradient(to left, #0a4f68, #1c6833,#049698);
+    color: aliceblue;
 }

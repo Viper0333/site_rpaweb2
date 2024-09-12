@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.missao h1 {
+    padding: 20px;
+
+    text-align: center;
+}
+
+.missao {
+    margin: 16px;
+    border-radius: 30px;
+    
+}
+
+.historia {
+    margin: 16px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.missao ul {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.historia h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.historia ul {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}

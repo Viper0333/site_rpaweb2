@@ -4,14 +4,28 @@
     box-sizing: border-box;
 }
 
+main{ /*ao clicar no menu a rolagem e suave*/
+    scroll-behavior: smooth; 
+}
+
 header h1 {
     font-family: "Kaushan Script", cursive;
-
 }
 
 #index {
     display: flex;
     height: 90%;
+}
+
+section::after {
+    max-width: 1280px;
+    content: '';
+    height: 4px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to right, rgba(195, 244, 255, 0.5), rgba(201, 255, 218, 0.946));
+    border-radius: 60%;
+    margin: 50px auto;
 }
 
 body {
@@ -22,4 +36,3 @@ body {
     font-family: "Heebo", sans-serif;
 
 }
-

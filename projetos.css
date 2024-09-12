@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.projetos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.tagprojects {
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+}
