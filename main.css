@@ -17,7 +17,7 @@ header h1 {
     height: 90%;
 }
 
-section::after {
+section::after {/*Configuração da linha de divisão*/
     max-width: 1280px;
     content: '';
     height: 4px;
@@ -25,7 +25,7 @@ section::after {
     display: block;
     background: linear-gradient(to right, rgba(195, 244, 255, 0.5), rgba(201, 255, 218, 0.946));
     border-radius: 60%;
-    margin: 50px auto;
+    margin: 50px auto; /*Coloca 50px acima e embaixo e centraliza com auto*/
 }
 
 body {

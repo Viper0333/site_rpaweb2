@@ -34,9 +34,12 @@ footer li, a{
     color: #c3c8c9;
 }
 
+.container h2 {
+    color: #f8f8f8;
+}
 
 .missao {
-    color: #c3c8c9;
+    color: #fff;
     background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(14, 77, 33, 0.946));
 }
 
