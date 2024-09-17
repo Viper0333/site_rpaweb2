@@ -35,16 +35,12 @@
     transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow; 
 }
 
-/*.card:hover {
-    transform: translate3d(0px, 0px, -250px);
-    box-shadow: 0 50px 80px -20px rgba(32, 195, 187, 0.5); /* Increased box shadow on hover*/
-/*}*/ 
 
 .card.flipped {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotateY(180deg) scale(1.6); /* Centraliza e aumenta o card */
+    transform: translate(-50%, -50%) scale(1.6); /* Centraliza e aumenta o card */
     width: 500px;
     height: 500px;
     z-index: 999;
@@ -63,7 +59,7 @@
     transform-style: preserve-3d;
 }
 
-.card-inner.flipped {
+.card.flipped .card-inner {
     transform: rotateY(180deg); /*scale(3.1);  Aumenta 10% quando vira */
 }
 
@@ -79,6 +75,11 @@
 
 .card-front {
     background: linear-gradient(to right, #034623, #316738);
+}
+
+.card-back {
+    background: linear-gradient(to right, #034623, #316738);
+    transform: rotateY(180deg); /* Gira a parte de trás 180 graus */
 }
 
 /* .card-front img {
