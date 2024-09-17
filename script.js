@@ -8,3 +8,16 @@ function abrirModal() {
         }
     } )
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecione todos os cards
+    const cards = document.querySelectorAll('.card');
+
+    // Para cada card, adicione um evento de clique
+    cards.forEach((card) => {
+        card.addEventListener('click', () => {
+            // Adiciona ou remove a classe 'flipped' para virar o card
+            card.classList.toggle('flipped');
+        });
+    });
+});

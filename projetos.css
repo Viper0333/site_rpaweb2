@@ -27,7 +27,7 @@
 .tagprojects {
     border-radius: 20px;
     padding: 30px;
-    margin: auto;
+    margin: 16px auto;
     display: flex;
     font-size: 20px;
 }
