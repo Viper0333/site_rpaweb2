@@ -18,7 +18,7 @@
 }
 
 .store-front-container img {
-    width: 100%; /* Ajustar a largura da imagem para o tamanho do contêiner */
+    width: 70%; /* Ajustar a largura da imagem para o tamanho do contêiner */
     height: auto; /* Manter a proporção da imagem */
     display: block; /* Evitar margens indesejadas ao redor da imagem */
     margin: 0 auto; /* Centralizar a imagem horizontalmente */
@@ -34,7 +34,7 @@
     display: inline-block; /* Definir o botão como bloco em linha */
     padding: 25px 50px; /* Espaçamento interno do botão */
     font-size: 25px;
-    background-color: tomato; /* Cor de fundo do botão */
+    background-color: rgb(232, 100, 18); /* Cor de fundo do botão */
     border-radius: 20px;
     color: white; /* Cor do texto do botão */
     border: none; /* Remover borda padrão */
@@ -42,7 +42,7 @@
     transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
 }
 .btn:hover {
-    background-color: #ff4c2c;
+    background-color: #ff2802;
 }
 
 .Janela_modal {
@@ -131,3 +131,5 @@ form button:hover {
 input:focus, textarea:focus {
     outline-color: #182c61;
 }
+
+

@@ -21,7 +21,7 @@
 <body>
     <style>
         body {
-            background-image: url('imagens/ImagemFundo.png');
+            background-image: url('imagens/ImagenDeFundoEscra.png');
             background-repeat: no-repeat; /* Evita a repetição da imagem */
             background-size: cover; /* Faz com que a imagem cubra todo o elemento */
             background-position: center; /* Centraliza a imagem no container */
@@ -49,9 +49,9 @@
         <div class="modal">
             <button class="fechar" id="fechar">X</button>
             <h3>Formulário de Automação</h3>
-                <form>
-                    <input type="text" placeholder="Seu nome" required /> <!-- required vai mostrar os campos que sao obrigatórios-->
-                    <input type="email" placeholder="Seu e-mail" required />
+                <form action="envia.php" method="post" autocomplete="on">
+                    <input type="text" name="nome" placeholder="Seu nome" required /> <!-- required vai mostrar os campos que sao obrigatórios-->
+                    <input type="email" name="email"placeholder="Seu e-mail" required />
                     <input type="tel" placeholder="Seu telefone de contato"/>
                     <textarea placeholder="Descreva sua necessidade de automação" required></textarea>
                     <button type="submit">Enviar</button>
@@ -67,7 +67,7 @@
         <div class="container-left">
             <div class="display-left">
                 <div class="store-front-container">
-                    <img src="imagens/Foto Lolo.jpg" alt="foto do ambiente rpa">
+                    <img src="imagens/Foto Lolo.jpg" alt="foto  rpa">
                 </div>
                 <div class="btn-container">
                     <div onclick="abrirModal()" class="btn">Solicitar Automação Rpa</div>
@@ -210,7 +210,7 @@
                     <div class="card-front-1">
                         <img src="#" alt="">
                         <h3>Plataforma: Automation Anywhere</h3>
-                        <h1>Criação de Pasta</h1>
+                        <h1>Gerenciamento de Pasta</h1>
                     </div>
                     <div class="card-back-1">
                         <img src="3.png" alt="">
