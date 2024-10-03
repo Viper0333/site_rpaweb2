@@ -4,6 +4,13 @@
         padding: 0;
         box-sizing: border-box;
     }
+
+
+    header nav ul a{
+        display: block;
+        margin: 0 auto;
+        margin-right: 16px;
+    }
     
     #index .container-left {
         /* background-color: aqua; */
