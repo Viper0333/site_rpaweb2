@@ -3,7 +3,7 @@
     $nome = addcslashes($_POST['NumeroA']);
     $email = addcslashes($_POST['NumeroB']);
 
-    $para = "alexlexadre1989@hotmail.com";
+    $para = "alexlexandre1989@hotmail.com";
     $assunto = "Validação com JavaScript";
 
     $corpo = "NumeroA: ".$NumeroA."\n"."NumeroB: ".$NumeroB."\n"
@@ -17,3 +17,4 @@
     }
 ?>
 
+<diretoriopasta>c:pastax/imagens/foto/principal</diretoriopasta>
