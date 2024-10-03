@@ -1,0 +1,66 @@
+@media (max-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #index .container-left {
+        /* background-color: aqua; */
+        /* width: 90%; */
+        margin: auto;
+    }
+
+    .btn {
+        padding: 25px;
+    }
+
+    .modal {
+        padding: 20px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%; /* Tornar os inputs responsivos */
+        margin-bottom: 12px; /* Aumentar o espaçamento entre os elementos */
+        padding: 12px; /* Aumentar o espaçamento interno */
+    }
+
+    #index {
+        display: block; /* Muda para layout em bloco (um item abaixo do outro) */
+    }
+
+    #index .display-higth{
+        width: 90%;
+    }
+
+    .card-container {
+        margin: 32px;
+    }
+
+    .card {
+        margin: auto;
+    }
+
+    .missao {
+        max-width: 90%;
+    }
+
+    .historia{
+        max-width: 90%;
+    }
+
+    .missao ul,
+    .historia ul {
+        text-align: justify;
+    }
+
+    /* .store-front-container {
+    background-color: aqua;
+    } */
+
+
+}

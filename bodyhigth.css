@@ -31,11 +31,6 @@
     margin-top: 16px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: space-between; /* Para distribuir o espaço entre os elementos */
-    margin-top: 50px;
-}
 
 .rede, .address {
     flex: 1; /* Faz com que os dois elementos ocupem o mesmo espaço */
@@ -50,10 +45,6 @@
 .rede img {
     width: 30px;
     height: 30px;
-}
-
-.social-links h3 {
-    margin: 16px auto;
 }
 
 .address h3 {

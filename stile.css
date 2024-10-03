@@ -11,9 +11,6 @@ header nav li a{
     background-color: rgba(255, 255, 255, 0.965);
 }
 
-.display-higth {
-    color: #fff;
-}
 
 footer {
     background-color: rgb(5, 71, 122);
@@ -25,41 +22,36 @@ form button:hover {
     background-color: #3c6ca7;
 }
 
-footer li, a{
-    color: #fff;
-}
 
 .historia {
     color: #c3c8c9;
     background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(14, 77, 33, 0.946));
 }
 
-.historia h1 {
-    color: #c3c8c9;
+.display-higth,
+.footer li, a,
+.container h2,
+.historia h1,
+.historia ul,
+.missao h1,
+.social-links h3 {
+    color: #fff;
 }
 
-.container h2 {
-    color: #f8f8f8;
-}
 
 .missao {
     color: #fff;
     background: linear-gradient(to right, rgba(3, 65, 135, 0.5), rgba(14, 77, 33, 0.946));
 }
 
-.missao h1 {
-    color: #c3c8c9;
-}
+
 
 .tagprojects {
     background:linear-gradient(to left, #0b94c7, #1c6833,#05e6ea);
     color: aliceblue;
 }
 
-.projetos h1 {
-    color: #a6dee5;
-}
-
+.projetos h1,
 .card-front-1 h3 {
     color: #a6dee5;
 }

@@ -9,6 +9,7 @@
 .missao h1 {
     padding: 50px;
     text-align: center;
+    
 }
 
 
@@ -32,7 +33,7 @@
 
 .missao ul {
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     font-size: 24px;
 }
 

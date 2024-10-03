@@ -18,15 +18,20 @@
 }
 
 .store-front-container img {
-    width: 70%; /* Ajustar a largura da imagem para o tamanho do contêiner */
+    width: 80%; /* Ajustar a largura da imagem para o tamanho do contêiner */
     height: auto; /* Manter a proporção da imagem */
     display: block; /* Evitar margens indesejadas ao redor da imagem */
     margin: 0 auto; /* Centralizar a imagem horizontalmente */
+    min-width: 270px;
 }
+
 
 .btn-container {
     margin-top: 100px; /* Espaço entre a imagem e o botão */
     text-align: center; /* Centralizar o botão */
+    /* min-width: 80vw; */
+    /* min-height: 10vh; */
+    max-width: 1280;
 }
 
 
@@ -60,9 +65,9 @@
 
 /* Configuração dentro da janela modal */
 .modal {
-    /* width: 100%; */
-        max-width: 450px;
-    /* min-height: 50px; */
+    width: 100%;
+    max-width: 450px;
+    min-height: 50px;
     background-color: #ffffff97;
     backdrop-filter: blur(10px);
     padding: 30px; /* Distância do conteúdo da borda */

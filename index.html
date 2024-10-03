@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="missao.css">
     <link rel="stylesheet" href="Cards.css">
+    <link rel="stylesheet" href="respMobile.css">
     
 </head>
 <body>
@@ -67,7 +68,11 @@
         <div class="container-left">
             <div class="display-left">
                 <div class="store-front-container">
-                    <img src="imagens/Foto Lolo.jpg" alt="foto  rpa">
+                    <picture>
+                        <source media="(max-width: 1024px)" srcset="imagens/roboRpa.jpg">
+                        <img src="imagens/Foto Lolo.jpg" alt="foto  rpa">
+                    </picture>
+                    
                 </div>
                 <div class="btn-container">
                     <div onclick="abrirModal()" class="btn">Solicitar Automação Rpa</div>
@@ -78,7 +83,7 @@
             <div>
                 <h1>Serviços</h1>
                 <ul class="textservice">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você deseja otimizar processos e liberar sua equipe de tarefas repetitivas, a automação RPA (Robotic Process Automation) é a solução ideal. Eu ofereço soluções personalizadas para automatizar tarefas como processamento de dados, integração de sistemas e geração de relatórios, permitindo que seu negócio funcione de forma mais rápida, eficiente e sem erros. Com robôs de software trabalhando 24 horas, você reduz custos, aumenta a produtividade e elimina falhas humanas. Vamos conversar e transformar seus processos com automação!
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você deseja otimizar processos e liberar sua equipe de tarefas repetitivas, a automação RPA (Robotic Process Automation) é a solução ideal. Eu ofereço soluções personalizadas para automatizar tarefas como processamento de dados, integração de sistemas e geração de relatórios, permitindo que seu negócio funcione de forma mais rápida, eficiente e sem erros. Com robôs de software trabalhando 24 horas, você reduz custos, aumenta a produtividade e elimina falhas humanas. Vamos conversar e transformar seus processos com automação!
                 </ul>
                 
                 <li>Automation anywhere</li>
@@ -88,44 +93,6 @@
                 <li>HTml:5</li>
                 <li>CSS5</li>
                 <li>Power BI</li>
-                
-                
-                <div class="social-links" id="asd">
-                    <div class="rede">
-                        <h3>Nos acompanhe</h3>
-                        <li>
-                            <a href="#" title="Siga-nos no Instagran">
-                                <img src="imagens/instagram.png" alt="Logo do instagran" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no linkedin">
-                                <img src="imagens/linkedin (1).png" alt="Logo do Facebook" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no twitter">
-                                <img src="imagens/twitter.png" alt="Logo do youtube" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Chame no whatsapp">
-                                <img src="imagens/whatsapp.png" alt="Logo do youtube" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no Youttube">
-                                <img src="imagens/youtube.png" alt="Logo do youtube" />
-                            </a>
-                        </li>
-                    </div>
-                    <!-- <div class="address">
-                        <h3>Venha ate nós</h3>
-                        <p>
-                            Rua Maria Aparecida 55, Bom Jesus Contagem
-                        </p>
-                    </div> -->
-                </div>
             </div>
         </div>
     </div>
@@ -270,16 +237,49 @@
         <div class="missao">
             
             <h1>Missão</h1>
-            <ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nossa missão na RPA Web é fornecer automações eficientes em diversas plataformas, totalmente alinhadas com as necessidades e expectativas de nossos clientes. É extremamente gratificante saber que nossas soluções estão desempenhando um papel crucial nas operações internas e externas, contribuindo significativamente para o sucesso dos nossos parceiros.</ul>
+            <ul>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nossa missão na RPA Web é fornecer automações eficientes em diversas plataformas, totalmente alinhadas com as necessidades e expectativas de nossos clientes. É extremamente gratificante saber que nossas soluções estão desempenhando um papel crucial nas operações internas e externas, contribuindo significativamente para o sucesso dos nossos parceiros.
+            </ul>
             
         </div>
         <div class="historia">
             <h1>História</h1>
-            <ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduado em Automação desde 2018 na Faculdade UNA de Belo Horizonte, iniciei minha jornada utilizando plataformas de low code como Automation Anywhere, UiPath e Power Automate. Foi nesse caminho que me apaixonei pela automação RPA e programação. Ao longo da minha carreira, participei de projetos em diversos segmentos, incluindo financeiro, RH, TI, CRM (Customer Relationship Management), setor ambiental e recursos hídricos, com foco em soluções que lidam com grandes volumes de dados e que otimizam processos críticos para as operações empresariais. </ul>
+            <ul>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduado em Automação desde 2018 na Faculdade UNA de Belo Horizonte, iniciei minha jornada utilizando plataformas de low code como Automation Anywhere, UiPath e Power Automate. Foi nesse caminho que me apaixonei pela automação RPA e programação. Ao longo da minha carreira, participei de projetos em diversos segmentos, incluindo financeiro, RH, TI, CRM (Customer Relationship Management), setor ambiental e recursos hídricos, com foco em soluções que lidam com grandes volumes de dados e que otimizam processos críticos para as operações empresariais. 
+            </ul>
             
         </div>
     </div>
-    
+    <div class="social-links" id="asd">
+        <div class="rede">
+            <h3>Nos acompanhe</h3>
+            <li>
+                <a href="#" title="Siga-nos no Instagran">
+                    <img src="imagens/instagram.png" alt="Logo do instagran" />
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Siga-nos no linkedin">
+                    <img src="imagens/linkedin (1).png" alt="Logo do Facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Visite nosso canal no twitter">
+                    <img src="imagens/twitter.png" alt="Logo do youtube" />
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Chame no whatsapp">
+                    <img src="imagens/whatsapp.png" alt="Logo do youtube" />
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Visite nosso canal no Youttube">
+                    <img src="imagens/youtube.png" alt="Logo do youtube" />
+                </a>
+            </li>
+        </div>
+    </div>
 
 
     <footer>
