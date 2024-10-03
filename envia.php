@@ -3,7 +3,7 @@
     $nome = addcslashes($_POST['NumeroA']);
     $email = addcslashes($_POST['NumeroB']);
 
-    $para = "alexlexandre1989@hotmail.com";
+    $para = "alexlexandre727gmail.com";
     $assunto = "Validação com JavaScript";
 
     $corpo = "NumeroA: ".$NumeroA."\n"."NumeroB: ".$NumeroB."\n"
