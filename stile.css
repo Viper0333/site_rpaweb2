@@ -53,5 +53,20 @@ form button:hover {
 
 .projetos h1,
 .card-front-1 h3 {
-    color: #a6dee5;
+    color: #97c9d0;
+}
+
+/*------------- Pagina Minhas habidades-------------*/
+
+.habilidade ul h1 {
+    color: #ea8305;
+}
+
+.habilidade ul p {
+    color: #91b4bb;
+}
+
+.habilidade ul h2 {
+    color: #14bbe0;
+    
 }
