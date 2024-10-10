@@ -14,18 +14,17 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Heebo", sans-serif;
-
 }
 
-.habilidade ul p {
+.contato {
     text-align: center;
     font-size: 24px;
     padding-bottom: 8px;
 }
 
-.habilidade ul h2, .habilidade ul h1 {
-    padding: 18px;
-    padding-top: 30px;
-    text-align: center;
-    font-size: 24px;
+.contato ul h2 {
+    padding: 30px;
+}
+.contato ul h3 {
+    padding: 30px;
 }

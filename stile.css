@@ -58,15 +58,20 @@ form button:hover {
 
 /*------------- Pagina Minhas habidades-------------*/
 
+.contato ul h1,
 .habilidade ul h1 {
     color: #ea8305;
 }
 
+.contato ul p,
 .habilidade ul p {
     color: #91b4bb;
 }
 
+.contato ul h2,
+.contato ul h3,
 .habilidade ul h2 {
     color: #14bbe0;
     
 }
+
