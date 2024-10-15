@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="Cards.css">
     <link rel="stylesheet" href="respMobile.css">
     <link rel="stylesheet" href="Contatos.html">
+    <link rel="stylesheet" href="email.js">
     
 </head>
 <body>
@@ -52,12 +53,17 @@
         <div class="modal">
             <button class="fechar" id="fechar">X</button>
             <h3>Formulário de Automação</h3>
-                <form action="envia.php" method="post" autocomplete="on">
+                <form 
+                    action="https://formSubmit.co/ajax/roboboot29@gmail.com" 
+                    method="POST" 
+                    data-form
+                    autocomplete="on">
+                    
                     <input type="text" name="nome" placeholder="Seu nome" required /> <!-- required vai mostrar os campos que sao obrigatórios-->
                     <input type="email" name="email"placeholder="Seu e-mail" required />
                     <input type="tel" placeholder="Seu telefone de contato"/>
                     <textarea placeholder="Descreva sua necessidade de automação" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" data-button="">Enviar</button>
                 </form>
         </div>
     </div>

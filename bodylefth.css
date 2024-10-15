@@ -112,8 +112,8 @@ form button {
 
 /* Desabilita ajuste manual do tamanho da caixa de texto */
 form textarea {
-    resize: none;
-    height: 180px; /* Aumenta a caixa de texto Sua mensagem */
+    /* resize: none; */
+    /* height: 180px; Aumenta a caixa de texto Sua mensagem */
 }
 
 section h3 {
