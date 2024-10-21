@@ -13,7 +13,7 @@
 
 /* ---------------------------------------Botão--------------------------------------------------- */
 .store-front-container {
-    position: relative; /* Definir posição relativa para o contêiner da imagem */
+    /*position: relative; /* Definir posição relativa para o contêiner da imagem */
     text-align: center; /* Centralizar conteúdo interno (botão) horizontalmente */
 }
 
@@ -29,8 +29,6 @@
 .btn-container {
     margin-top: 100px; /* Espaço entre a imagem e o botão */
     text-align: center; /* Centralizar o botão */
-    /* min-width: 80vw; */
-    /* min-height: 10vh; */
     max-width: 1280;
 }
 
@@ -50,9 +48,9 @@
     background-color: #ff2802;
 }
 
-.Janela_modal {
-    width: 100vw; /* Largura total da janela */
-    height: 100vh; /* Altura total da janela */
+/* .Janela_modal {
+    width: 100vw;
+    height: 100vh; 
     position: absolute;
     top: 0;
     left: 0;
@@ -61,80 +59,8 @@
     align-items: center;
     justify-content: center;
     z-index: 999;
-}
-
-/* Configuração dentro da janela modal */
-.modal {
-    width: 100%;
-    max-width: 450px;
-    min-height: 50px;
-    background-color: #ffffff97;
-    backdrop-filter: blur(10px);
-    padding: 30px; /* Distância do conteúdo da borda */
-    border-radius: 20px; /* Arredondamento das quinas da janela */
-}
-
-.modal h3 {
-    text-align: center;
-    margin: 20px;
-    font-size: 25px;
-}
-
-/* Botão fechar modal */
-.fechar {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 20%;
-    border: 0;
-    background-color: red;
-    color: #fff;
-    font-size: 20px;
-}
-
-.Janela_modal.abrir {
-    display: flex;
-}
+} */
 
 
-
-/* -------Formatação da tabela------ */
-form input,
-form textarea,
-form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-/* Desabilita ajuste manual do tamanho da caixa de texto */
-form textarea {
-    /* resize: none; */
-    /* height: 180px; Aumenta a caixa de texto Sua mensagem */
-}
-
-section h3 {
-    margin-bottom: 16px; /* Corrigido o uso de 'margin-bottom' ao invés de 'margin: button' */
-}
-
-form button {
-    background-color: #182c61;
-    color: #ecf0f1;
-    border: none; /* Remove as bordas pretas do botão Enviar */
-    cursor: pointer;
-}
-
-/* Efeito hover para o botão */
-form button:hover {
-    background-color: #3c6ca7;
-}
-
-/* Foco nos inputs */
-input:focus, textarea:focus {
-    outline-color: #182c61;
-}
 
 

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1,
+.title h1{
+    font-family: "Kaushan Script", cursive;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Heebo", sans-serif;
+
+}
+
+.form h1 {
+    text-align: center;
+    margin: 20px;
+    color: aliceblue;
+}
+
+.form {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+    min-height: 90%;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(78, 131, 72);
+
+}
+
+/* Botão fechar modal */
+/* .fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+} */
+
+/* .Janela_modal.abrir {
+    display: flex;
+} */
+
+fieldset {
+    margin: auto;
+    max-width: 800px;
+    border: none;
+    background-color: rgb(54, 120, 185);
+}
+
+
+form input,
+form textarea,
+form button {
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: rgb(221, 255, 0);
+    
+}
+
+label {
+    margin: auto;
+    display: inline-block;
+    color:#ecf0f1;
+    background-color: rgb(13, 0, 255);
+}
+
+.bloco {
+    display: flex;
+    align-items: center; /* Alinha a label e o input na vertical */
+    margin-bottom: 10px;
+    background-color: red;
+    
+}
+
+.bloco label {
+    min-width: 100px; /* Define um tamanho mínimo para a label */
+}
+
+textarea {
+    max-width: 700px;
+    width: 50px;
+}
+
+
+
+/* Desabilita ajuste manual do tamanho da caixa de texto
+form textarea {
+    resize: none; 
+    height: 180px; Aumenta a caixa de texto Sua mensagem 
+}*/
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none; /* Remove as bordas pretas do botão Enviar */
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 23px;
+    color: rgb(250, 124, 6);
+}
+
+/* Efeito hover para o botão */
+form button:hover {
+    background-color: #3c6ca7;
+}
+
+/* Foco nos inputs */
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}

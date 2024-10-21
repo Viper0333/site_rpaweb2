@@ -34,7 +34,9 @@ form button:hover {
 .historia h1,
 .historia ul,
 .missao h1,
-.social-links h3 {
+.social-links h3,
+.bloco-name,
+.title {
     color: #fff;
 }
 
