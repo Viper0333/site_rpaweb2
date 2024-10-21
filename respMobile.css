@@ -70,6 +70,14 @@
         text-align: justify;
     }
 
+    .contato ul h2 {
+        font-size: 25px;
+    }
+
+    .contato .email {
+        font-size: 15px;
+    }
+
     /* .store-front-container {
     background-color: aqua;
     } */
