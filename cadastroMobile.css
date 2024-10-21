@@ -34,6 +34,8 @@ body {
 }
 
 .title h1 {
+    color: rgb(0, 255, 213);
+    padding-top: 20px;
     font-size: 22px;
 }
 
@@ -56,4 +58,12 @@ form button {
     
 }
 
+form textarea {
+    height: 100px;
 } 
+
+form button {
+    margin-top: 20px;
+}
+
+}
