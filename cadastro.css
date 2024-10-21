@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+header h1 {
+    font-family: "Kaushan Script", cursive;
+}
+
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: "Heebo", sans-serif;
 }
 
 .container {
@@ -25,7 +30,7 @@ body {
 }
 
 form {
-    margin-top: 30px;
+    margin-top: 80px;
     position: absolute;
     /* background-color: rgba(4, 247, 247, 0.356); */
     top: 50%;
@@ -42,6 +47,7 @@ form {
 .title{
     text-align: center;
     margin: 20px;
+    color: rgb(0, 255, 213);
     
 }
 .corpo-formulario {
