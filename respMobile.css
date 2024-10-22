@@ -84,6 +84,7 @@
     /* .store-front-container {
     background-color: aqua;
     } */
-
-
+    .card {
+        border: 2px solid #00e1ff;
+    }
 }
