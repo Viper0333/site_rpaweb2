@@ -54,7 +54,8 @@ form button:hover {
 }
 
 .projetos h1,
-.card-front-1 h3 {
+.card-front-1 h3,
+.title_card {
     color: #97c9d0;
 }
 
