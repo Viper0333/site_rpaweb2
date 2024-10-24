@@ -4,30 +4,55 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;  
+header h1 {
+    font-family: "Kaushan Script", cursive;
 }
 
-#projetos h2 {
-    font-size: 50px;
-    text-align: center;
-    margin: 30px auto;
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Heebo", sans-serif;
 }
 
-/* .projetos {
-    display: flex;
+.process h1 {
+    color: tomato;
     text-align: center;
-    justify-content: center;
-    gap: 12px;
-    
-} */
+    margin: 16px;
 
-.tagprojects {
-    border-radius: 20px;
-    padding: 30px;
-    margin: 16px auto;
-    display: flex;
+}
+
+.process h2 {
+    color: aqua;
+    text-align: center;
+    margin: 16px;
     font-size: 20px;
+
+}
+.process h3 {
+    color: rgb(220, 229, 241);
+    text-align: center;
+    font-size: 2em;
+    margin: 16px;
+
+}
+
+.process p {
+    color: rgb(220, 229, 241);
+    text-align: center;
+    text-align: justify;
+    font-size: 1em;
+    margin: 16px;
+
+}
+.insertInto,
+.update {
+    padding: 10px;
+    color: rgb(228, 156, 62);
+    text-align:justify;
+    text-align: justify;
+    font-size: 1em;
+    margin: 16px;
+
 }

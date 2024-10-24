@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com notas físcais</title>
+    <link rel="shortcut icon" href="imagens/RW.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('imagens/ImagenDeFundoEscra.png');
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center; /* Centraliza a imagem no container */
+        }
+    </style>
+    <header>
+        <div class="container">
+            <h1>Rpa Web</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="process">
+            <ul>
+                <h1>Processamento de notas ficais </h1>
+                <h2>Tecnologias utilizadas: Automation Anywhere, Sql, OCR, Regex, xpath, </h2>
+                <h2>Este processo visava reduzir tempo de execução do cadastro e possibilitar o time trabalhar com outras tarefas de maior valor</h2>
+                <h3>Objetivo geral</h3>
+                
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;O processo iniciou-se com a alocação das notas fiscais em um diretório pré-definido pelos colaboradores, sendo necessário que os arquivos seguissem um padrão específico de nomenclatura para que o processamento fosse acionado. O robô processava os arquivos, extraindo campos específicos, como CNPJ, inscrição estadual, datas de vencimento e emissão, valor e razão social. Os dados extraídos foram salvos no banco de dados por meio da instrução da query "INSERT INTO".</p>
+
+                <div class="insertInto"><i>INSERT INTO tabelaCadastro (Type_of_form, DataAdmissao, Company, Full_name, CPF, status, Step) VALUES ('$Tittle_Of_Form$', '$DataAdmissao$', '$Company$', '$FullName$', '$CPF$'' 'Sucesso', '1');</i></div>
+
+                <p>Após esta etapa de extração, os arquivos eram renomeados conforme um padrão estabelecido, garantindo formato CamelCase na descrição dos arquivos e facilitando a execução das fases subsequentes do bot.</p>
+                
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizando gestão de processos estruturei em várias etapas, sendo monitorado por um gerenciador de erros que permitia visualizar o processamento e identificar falhas por meio de Process Mining(Análise de processos) utilizando logs de eventos. A cada etapa, era exibida mensagen com sucesso ou reportando erros, facilitando a análise em tempo real. Com base nessas mensagens, ao final de cada fase, utilizei a ação gravador e em outros casos utilizei o reconhecimento de imagens e âncora para ler esta mensagem que o sistema gerava e utilizei para validar o processo através de uma variável, então executava uma query "UPDATE" para atualizar o banco de dados.
+                
+                <div class="update"><i>UPDATE tabelaCadastro SET Step = 'valorDaEtapa' WHERE Full_name = '$nomeCompleto$' AND cpf = '$CPF$' AND Status = 'OK';</i></div>
+
+                <p>Com este comando atualizava o status no banco de dados, garantindo o acompanhamento adequado do fluxo de execução e a consistência dos dados.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Na etapa final do processo, executava-se uma query de atualização (Update) que atribuía ao "step" o valor correspondente à fase da execução, além de definir o status como "Processamento concluído com sucesso". Após o término do processamento de toda a massa de dados, era enviada uma notificação por e-mail ao gestor responsável e demais colaboradores envolvidos, confirmando a conclusão da tarefa.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Esse aprimoramento garante a rastreabilidade das etapas executadas e uma comunicação eficiente com os stakeholders, validando a conclusão do fluxo de trabalho de maneira automatizada e confiável.</p>
+                
+                <h3>Conclusão</h3>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Este fluxo de trabalho não apenas automatizou a inserção de dados, mas também garantiu a integridade e validação dos registros, reduziu significativamente o tempo e esforço manual necessário para o processamento fiscal mensal.</p>
+                </p>
+                                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -11,6 +11,15 @@
     margin: 20px
 }
 
+@media (min-width: 1360px){
+    #index .display-higth{
+        width: 60%;
+        padding: 16px;
+        border-radius: 20px;
+        margin: 20px
+    }
+}
+
 .display-higth h1 {
     text-align: center;
     margin:16px;

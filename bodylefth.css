@@ -10,6 +10,11 @@
     border-radius: 20px;
     margin: 20px
 }
+@media (max-width: 1460px){
+    #index .container-left {
+        width: 40%;
+    }
+}
 
 /* ---------------------------------------Botão--------------------------------------------------- */
 .store-front-container {
@@ -27,7 +32,7 @@
 
 
 .btn-container {
-    margin-top: 100px; /* Espaço entre a imagem e o botão */
+    margin-top: 50px; /* Espaço entre a imagem e o botão */
     text-align: center; /* Centralizar o botão */
     max-width: 1280;
 }
