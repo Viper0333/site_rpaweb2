@@ -82,6 +82,7 @@
         
     }
     
+    
     .card-back-1 h3, a {
         font-size: 28px;
         margin: 50px;
@@ -109,17 +110,22 @@
     }
     }
 
-    
+/* .card-back-1  a {
+    margin: 100px;
+} */
 
-
+.card-back-1 h3 {
+    padding: 12px;
+    margin: 0;
+}
 
 .card-back-1 p {
     text-align: justify;
     text-decoration: none;
-    margin: 50px;
+    margin: 25px;
     font-size: 25;
+    
 }
-
 
 .card-front,
 .card-back {
@@ -131,14 +137,15 @@
     border-radius: 16px;
 }
 
-.card-front {
-    background: linear-gradient(to right, #034623, #316738);
+.card-front-1 h3{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.card-back {
-    background: linear-gradient(to right, #034623, #316738);
+/* .card-back {
+    background: linear-gradient(to right, #034623, #6e4e44);
     transform: rotateY(180deg); /* Gira a parte de trás 180 graus */
-}
+/*} */
 
 /* .card-front img {
     width: 200px;
@@ -177,7 +184,13 @@
 }
 
 .card-front-1 {
-    background: linear-gradient(to right, #034623, #316738);
+    background-color: #0c785867;
+    /* background: linear-gradient(to right, #18885b, #022d4c); */
+}
+
+.card-front-1 h1 {
+    
+    margin: 30px;
 }
 
 /* .card-front-1 img {
@@ -186,7 +199,8 @@
 } */
 
 .card-back-1 {
-    background: linear-gradient(to right, #034623, #316738);
+    background-color: #147558fd;
+    /* background: linear-gradient(to right, #347997, #44904e); */
     color: #070404;
     /* box-shadow: 0 5px 20px #03dffc; */
     transform: rotateY(180deg);
@@ -194,14 +208,13 @@
 
 .fechar {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 8px;
     width: -20px;
-    border-radius: 50%;
-    box-shadow: 0 5px 50px #03dffc;
+    border-radius: 8px;
     border: 0;
     background-color: rgba(23, 131, 93, 0);
-    color: #03dffc;
+    color: #82e2ef;
     font-size: 20px;
 }
 

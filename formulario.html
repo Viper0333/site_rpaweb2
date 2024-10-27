@@ -35,15 +35,40 @@
 
 
     <div class="container">
-        <div class="habilidade">
+        <div class="process">
             <ul>
-                <h1></h1>
-                <h2></h2>
-                <p></p>
-                <h2></h2>
-                <p></p>
-                <h2></h2>
+                <h1>Processamento de Formulários</h1>
+                <h2>Tecnologias utilizadas: Automation Anywhere, SQl, OCR, Mysql, python e VBA  </h2>
+                <h2>Este processo visava reduzir tempo de execução do cadastro e possibilitar o time trabalhar com outras tarefas de maior valor</h2>
+                <h3>Objetivo geral</h3>
                 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;O processo de cadastramento de formulários havia três tipos de formulários: admissão, demissão e movimentação dentro da empresa de um setor para outro. Os formulários eram alocados em um diretório em nuvem onde todos colaboradores do setor tinha acesso, gerenciando assim cada modalidade em sua pasta.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;No início do processo os arquivos com extensão .doc eram convertidos em .pdf para utilizar o OCR(Reconhecimento Óptico de Caracteres), tecnologia que identifica e converte textos em imagens ou documentos digitalizados em texto editável. Utilizei desta forma pois o OCR não estava funcionando corretamente em arquivo .doc, pois não identificava a checkbox.</p>
+                
+                <p>Todas informações eram extraídas e através de um query com o comando:</p>
+
+                <div class="insertInto"><i>INSERT INTO tabelaCadastro (Type_of_form, DataAdmissao, Company, Full_name, CPF, status, Step) VALUES ('$Tittle_Of_Form$', '$DataAdmissao$', '$Company$', '$FullName$', '$CPF$'' 'Sucesso', '1');</i></div>
+
+                <p>A partir deste comando as informações eram inseridas no banco de dados.</p>
+                
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Dependendo do tipo de formulário, admissão, demissão e movimentação, era realizada a integração com o sistema corporativo para a criação, liberação ou bloqueio do usuário nos sistemas conforme sua função de contratação. Após a conclusão do cadastramento, uma mensagem de sucesso era gerada e utilizada para validar a finalização do processo.</p>
+
+                <p>Na utilização do gerenciador de erros o bot desempenhou um papel essencial ao identificar, tratar e monitorar falhas para garantir a continuidade e a robustez da execução do robô. Em alguns pontos do processo era exibida mensagens com sucesso ou reportando erros, facilitando a análise em tempo real. </p>
+
+                <p>Com base nessas mensagens, ao final de cada fase, utilizei a ação “gravador” e em outros casos utilizei o “reconhecimento de imagens” e “âncora” que são ferramentas do Automation Anywhere, para ler esta mensagem que o sistema gerava e utilizei para validar o processo através de variáveis de entrada e saída, então executava uma query "UPDATE" para atualizar o banco de dados.</p>
+                
+                <div class="update"><i>UPDATE tabFormulario SET validado = 'Processado com Sucesso' WHERE fullName = '$nomeCompleto$' AND cpf = '$CPF$' AND Status = 'OK';</i></div>
+
+                <p>Com este comando atualizava o status no banco de dados, garantindo o acompanhamento adequado do fluxo de execução e a consistência dos dados. Atribuía ao campo "validado"(coluna de validação do banco de dados) o valor correspondente à fase da execução, além de definir o status como "OK". Após o término do processamento de toda a massa de dados, era enviada uma notificação por e-mail ao gestor responsável e demais colaboradores envolvidos, confirmando a conclusão da tarefa.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Na etapa final do processo, executava-se uma query de atualização (Update) que atribuía ao "step" o valor correspondente à fase da execução, além de definir o status como "Processamento concluído com sucesso". Após o término do processamento de toda a massa de dados, era enviada uma notificação por e-mail ao gestor responsável e demais colaboradores envolvidos, confirmando a conclusão da tarefa. garantindo a rastreabilidade das etapas executadas e uma comunicação eficiente com os stakeholders, validando a conclusão do fluxo de trabalho de maneira automatizada e confiável.</p>
+                
+                <h3>Conclusão</h3>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Esse fluxo de trabalho automatizou o cadastro de novos funcionários, desligamentos e movimentações internas, e também garantiu a precisão e consistência dos dados, reduzindo o esforço manual e aumentando a eficiência operacional do departamento de RH.</p>
+                </p>
+                                
             </ul>
         </div>
     </div>

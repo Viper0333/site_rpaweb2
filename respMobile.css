@@ -87,7 +87,7 @@
     .card {
         border: 2px solid #00e1ff;
     }
-    .card-back-1 h1,a {
+    .card-back-1 h1 {
         font-size: 14px;
         margin: 10px;
     }
@@ -100,6 +100,20 @@
         font-size: 8px;
         margin: 10px;
     }
+
+    .card.flipped {
+        transform: translate(-50%, -50%) scale(1.9, 1.8); /* Centraliza e aumenta o card */
+        z-index: 999;
+        box-shadow: 0 50px 80px -20px rgba(32, 195, 187, 0.5);
+        font-size: 15px;
+        color: tomato;
+    }
+
+    .card-back-1 a {
+        font-size: 13px;
+        padding-top: 20px;      
+    }
+    
 
 
 }
