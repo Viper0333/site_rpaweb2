@@ -114,15 +114,6 @@
         padding-top: 20px;      
     }
     
-    .process img{
-        .store-front-container img {
-            width: 10%; /* Ajustar a largura da imagem para o tamanho do contêiner */
-            height: auto; /* Manter a proporção da imagem */
-            display: block; /* Evitar margens indesejadas ao redor da imagem */
-            margin: 0 auto; /* Centralizar a imagem horizontalmente */
-            min-width: 170px;
-        }
-    }
-
+    
 
 }
