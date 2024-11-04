@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="respMobile.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-dracula.min.css" />
     <link rel="stylesheet" href="prism.css">
@@ -153,8 +154,16 @@
                 <img src="imagens/excelConvertido.png" alt="">
             </picture>
             
-            <p></p>
+            <h2>Criando o executável</h2>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para transformar o arquivo em um executável, foi essencial configurar um ambiente virtual no início do processo. Esse passo evita a inclusão de bibliotecas ou arquivos desnecessários no executável, o que poderia resultar em um arquivo excessivamente grande e até mesmo prolongar o tempo de conversão.
+
+            <p>No prompt de comando (CMD), defini o caminho para o diretório do ambiente virtual contendo todas as bibliotecas e dependências necessárias para a criação do executável. Em seguida, utilizei o comando <i><b>pip install pyinstaller</b></i> para instalar o PyInstaller, uma ferramenta que converte scripts Python em arquivos executáveis. Para consolidar todas as dependências em um único executável, utilizei o comando <i><b>pyinstaller --onefile nome_do_CAM.py</b></i>, o qual agrupa todas as dependências junto ao script principal. Isso facilita a distribuição, uma vez que gera um único arquivo executável.</p>
+
+            <p>Como o script não possui interação visual com o usuário, não foi necessário incluir a opção -w. Caso contrário, o comando completo teria sido <i><b>pyinstaller --onefile -w CAM.py</b></i>. Assim, o executável gerado, nomeado como “CAM” (Conversor Amperes Milímetros), encapsula todo o código necessário para executar o conversor de forma autônoma.</p>
+
             <h2>Conclusão</h2>
+
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ao propor essa solução automatizada, este estudo contribui para a melhoria dos processos de monitoramento em atividades mineradoras, aumentando a eficiência das práticas de gestão ambiental e promovendo maior agilidade na análise dos dados.</p>
         </div>
     </div>

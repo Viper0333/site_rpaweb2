@@ -73,12 +73,3 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
-@media (max-width: 1024px) {
-    .picture img{
-        width: 90%; /* Ajustar a largura da imagem para o tamanho do contêiner */
-        height: auto; /* Manter a proporção da imagem */
-        display: block; /* Evitar margens indesejadas ao redor da imagem */
-        margin: 0 auto; /* Centralizar a imagem horizontalmente */
-        min-width: 220px;
-    }
-}
