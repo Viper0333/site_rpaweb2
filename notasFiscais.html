@@ -42,7 +42,7 @@
                 <h2>Este processo visava reduzir tempo de execução do cadastro e possibilitar o time trabalhar com outras tarefas de maior valor</h2>
                 <h3>Objetivo geral</h3>
                 
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;O processo iniciou-se com a alocação das notas fiscais em um diretório pré-definido pelos colaboradores, sendo necessário que os arquivos seguissem um padrão específico de nomenclatura para que o processamento fosse acionado. O robô processava os arquivos, extraindo campos específicos, como CNPJ, inscrição estadual, datas de vencimento e emissão, valor e razão social. Os dados extraídos foram salvos no banco de dados por meio da instrução da query "INSERT INTO".</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;O pipeline(sequência da automação) de automação foi iniciado com a alocação das notas fiscais em um diretório específico, com a exigência de que os arquivos seguissem um padrão de nomenclatura predefinido para acionar o processamento automático. Configurei o robô para realizar o parsing(processo de analisar) dos arquivos utilizando conversao para imagem os preparando para utilizar a ferramenta OCR, apliquei expressões regulares (regex) para extrair dados relevantes, incluindo CNPJ, inscrição estadual, datas de vencimento e emissão, valor e razão social. Para capturar o CNPJ, utilizei a expressão regular <i id="regex"> \d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}</i>, enquanto para as datas aplicou-se <i id="regex">\d{2}/\d{2}/\d{4}</i>. Os dados extraídos foram persistidos no banco de dados por meio de uma instrução SQL INSERT INTO, garantindo a integridade e disponibilidade dos registros para futuras consultas e análises.</p>
 
                 <div class="insertInto"><i>INSERT INTO tabelaCadastro (razaoSocial, valorNota, cnpj, DataAdmissao, PI, status, Step) VALUES ('$razaoSocial$', '$valorNota$', '$cnpj$', '$dataEmissao$', '$PI$'' 'Sucesso', '1');</i></div>
 
@@ -62,7 +62,8 @@
 
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Este fluxo de trabalho não apenas automatizou a inserção de dados, mas também garantiu a integridade e validação dos registros, reduziu significativamente o tempo e esforço manual necessário para o processamento fiscal mensal.</p>
                 </p>
-                                
+                
+
             </ul>
         </div>
     </div>

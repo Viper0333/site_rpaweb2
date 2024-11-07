@@ -73,3 +73,11 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+#regex {
+    color: rgb(8, 212, 192);
+}
+
+.folder {
+    width: 1200px;
+}
