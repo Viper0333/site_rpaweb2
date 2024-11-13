@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger com Power Automate</title>
+    <link rel="shortcut icon" href="imagens/RW.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('imagens/ImagenDeFundoEscra.png');
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center; /* Centraliza a imagem no container */
+        }
+    </style>
+    <header>
+        <div class="container">
+            <h1>Rpa Web</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="process">
+            <ul>
+                <h1>Usando Power automate no disparo de Bot </h1>
+                <h2>Tecnologias utilizadas: Power Automate</h2>
+                <h2>Objetivo do bot: Disparar bot atravês de palavra chave </h2>
+                <h3>Objetivo geral</h3>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Com vários processos sendo criado e alguns usando gatilhos para execução do bot foi necessário centralizar as informações em um único local para gerenciar a execução dos bots.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento do bot de agendamento utilizando o Power Automate, adotei uma série de conectores e recursos estratégicos que permitiram a criação de um fluxo automatizado e eficiente para monitorar e responder a eventos específicos. O objetivo central foi construir um fluxo que pudesse monitorar menções a palavras-chave em um grupo de colaboradores no Microsoft Teams, executar o bot, e notificar adequadamente os usuários, mantendo a fluidez da comunicação e a integridade dos dados em todas as etapas. </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Como vemos abaixo temos a foto do corpo do processo em criado blocos, cada bloco é um conector que realiza uma ação:</p>
+                <img class="" src="imagens/processoPowerAutomate1.png" alt="">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>Quando palavras-chave são mencionadas</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A configuração do conector “Quando palavras-chave são mencionadas” foi a base do fluxo. Esse conector permite que o bot monitore em tempo real a presença de termos específicos em conversas ou canais. A vantagem técnica dessa abordagem é que ela proporciona uma automação reativa, ou seja, o bot só é acionado em momentos relevantes, otimizando o uso de recursos e evitando execuções desnecessárias.</p>
+
+                    <img class="" src="imagens/processoPowerAutomate2.png" alt="">
+                
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Em Canal – 1, temos um ID de teste apenas para exemplificar </p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>Postar mensagem em um chat ou canal</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Uma vez detectada a palavra-chave, o conector “Postar mensagem em um chat ou canal” entra em ação, enviando uma notificação automática com base no contexto da menção, mantendo todos os participantes do canal informados. Essa notificação não apenas agiliza a comunicação, mas também elimina a necessidade de intervenções manuais, contribuindo para a escalabilidade do fluxo.</p>
+                <img class="" src="imagens/processoPowerAutomate3.png" alt="">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>Referências HTTP</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A inclusão de “Referências HTTP” foi essencial para permitir que o bot interagisse com APIs externas. Utilizando esse conector, implementei requisições para obter informações adicionais de sistemas externos quando necessário, enriquecendo os dados processados. Para maximizar a versatilidade desse processo, </p>
+
+                <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <img class="" src="" alt=""> -->
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>Compor</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizei o conector “Compor”, que atua como um contêiner temporário para armazenar valores intermediários e simplificar o fluxo, promovendo uma leitura mais clara e uma lógica de execução organizada.</p>
+                <img class="" src="imagens/processoPowerAutomate4.png" alt="">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>Analisar JSON</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A seguir, a etapa de **Analisar JSON** foi usada para converter as respostas de APIs em dados estruturados. Esse conector permite que o fluxo extraia valores específicos de um retorno JSON, viabilizando o uso de dados complexos dentro do fluxo de trabalho. </p>
+                <img class="" src="imagens/processoPowerAutomate5.png" alt="">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h2>HTTP 2</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A combinação do conector **HTTP 2** com o **Analisar JSON** aumentou a eficiência na manipulação e organização dos dados, permitindo que eu segmentasse informações em campos específicos para posterior uso nas mensagens de retorno.</p>
+                <img class="" src="imagens/processoPowerAutomate6.png" alt="">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Em Canal – 1, temos um ID de teste apenas para exemplificar </p>
+
+                <h3>Conclusão</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;O Power Automate apresenta uma plataforma robusta para gerenciar esses fluxos e executar os bots de forma integrada, tornando o processo não apenas mais automatizado, mas também mais controlado.</p>
+        </div>
+    </div>
+</body>
+</html>

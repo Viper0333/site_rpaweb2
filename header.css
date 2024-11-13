@@ -39,3 +39,20 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+.nav {
+    display: inline;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.nav li {
+    display: inline;
+    margin: auto;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 80px;
+    
+}
+
+

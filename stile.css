@@ -82,3 +82,6 @@ form button:hover {
     color: tomato;
 }
 
+.nav li a {
+    color: rgb(127, 238, 255);
+}
