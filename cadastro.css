@@ -17,8 +17,8 @@
 
     .title {
         text-align: center;
-        /* align-items: center; */
         font-size: 0.8rem;
+        padding-top: 50px;
     }
 
     form {
