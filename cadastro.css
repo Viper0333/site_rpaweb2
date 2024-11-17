@@ -18,22 +18,18 @@
     .title {
         text-align: center;
         font-size: 0.8rem;
-        padding-top: 50px;
+        /* padding-top: 50px; */
+        background-color: #477878;
     }
 
     form {
-        margin: auto;
+        /* margin: auto; */
         max-width: 460px;
     }
-
 
     .container-input input,
     .container-input textarea,
     form button {
-        /* display: flex; */
-        /* margin: auto; */
-        /* justify-content: center; */
-        /* align-items: center; */
         max-width: 380px;
         min-width: 380px;
     }
@@ -42,17 +38,6 @@
         width: 95%;
     }
 
-    /* .container-input textarea {
-
-        max-width: 450px;
-        min-width: 450px;
-    } */
-    
-
-    .bodyform button {
-        /* max-width: 460px; */
-        /* background-color: #00e1ff; */
-    }
 }
 
 .bodyform {
@@ -64,7 +49,6 @@
     font-family: monospace;
     color: rgb(1, 2, 2);
     font-family: "Heebo", sans-serif;
-    
 }
 
 header h1 {
@@ -105,8 +89,6 @@ textarea {
     padding-bottom: 13px;
     /* background-color: rgb(70, 155, 81); */
 }
-
-
 
 .container-input input {
     /* position: absolute; */
