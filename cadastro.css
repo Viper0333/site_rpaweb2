@@ -13,9 +13,10 @@
         height: 100vh;
     }
 
-    .bodyform h1 {
-        align-items: center;
-        font-size: 1.4rem;
+    .title {
+        text-align: center;
+        /* align-items: center; */
+        font-size: 0.8rem;
     }
 
     form {
