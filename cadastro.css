@@ -6,8 +6,8 @@
 /*---------------Titulo e formulário---------------*/
 
 @media (max-width: 600px) {
-    header {
-        max-width: 560px;
+    body {
+        max-width: 460px;
     }
 
     .bodyform {
