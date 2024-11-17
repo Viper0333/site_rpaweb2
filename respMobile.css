@@ -30,6 +30,12 @@
         padding: 20px;
     }
 
+    
+    .process img {
+        width: 360px;
+    }
+    
+
     /*------------Configura o formulario------------*/
     /* .bodyform {
         display: flex;
