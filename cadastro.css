@@ -32,6 +32,10 @@
         max-width: 460px;
     }
 
+    .container-input {
+        width: 95%;
+    }
+
     .container-input textarea {
 
         max-width: 460px;
