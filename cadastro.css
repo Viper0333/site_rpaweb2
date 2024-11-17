@@ -6,11 +6,13 @@
 /*---------------Titulo e formulário---------------*/
 
 @media (max-width: 600px) {
-    .bodyform {
+    body .bodyform {
         display: flex;
         margin: auto;
         width: 460px;
         height: 100vh;
+        justify-content: center; /*centraliza no centro da tela*/
+        align-items: center;
     }
 
     .title {
