@@ -5,7 +5,7 @@
 }
 /*---------------Titulo e formulário---------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     body .bodyform {
         display: flex;
         margin: auto;
@@ -13,6 +13,7 @@
         height: 100vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
+        background-color: #04ffff;
     }
 
     .title {
