@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Habilidades</title>
+    <title>Orçamento de Automação</title>
     <link rel="shortcut icon" href="imagens/RW.ico" type="image/x-icon">
     <link rel="stylesheet" href="stile.css">
     <link rel="stylesheet" href="header.css">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="cadastroMobile.css">
+    <link rel="stylesheet" href="respMobile.css">
     
 
 </head>
@@ -36,45 +36,39 @@
             </nav>
     </header>
     
-    <div class="title">
-        <h1>Formulário de Automação</h1>
-    </div>
 
-    <div class="form">
-        <!-- <button class="fechar" id="fechar">X</button> -->
-            <form 
-                action="https://formSubmit.co/ajax/roboboot29@gmail.com" 
-                method="POST" 
-                data-form
-                autocomplete="on">
-                
-                <div class="corpo-formulario">
-                    <div class="bloco">
-                        <label for="nome" class="nome">Name:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
-                    </div>
-    
-                    <div class="bloco">
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
-                    </div>
-                    
-                    <div class="bloco">
-                        <label for="tel">Telefone:</label>
-                        <input type="tel" id="tel" placeholder="Digite seu telefone de contato"/>
-                    </div>
-    
-                    <div class="bloco">
-                        <label for="desscricao">Descricao</label>
-                        <textarea name="descricao" id="desscricao" placeholder="Descreva sua necessidade de automação" required></textarea>
-                    </div>
+    <div class="bodyform">
+        <div class="title">
+            <h1>Formulário de Automação</h1>
+        </div>
+        
+        <form action="https://formSubmit.co/ajax/roboboot29@gmail.com" method="POST" data-form >
+            <div class="containerForm">
+                <div class="container-input">
+                    <!-- <label for="username" class="label" id="label">Name Completo</label> -->
+                    <input class="textInput" type="text" name="nome" id="nome" required autocomplete="off" placeholder="Digite seu nome"/>
                 </div>
 
-                <button type="submit" data-button="">Enviar</button>
+                <div class="container-input">
+                    <!-- <span>E-mail:</span> -->
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder=" Digite seu E-mail"  />
+                </div>
+                
+                <div class="container-input">
+                    <!-- <span>Telefone:</span> -->
+                    <input type="tel" id="tel" placeholder=" Digite seu Telefone"/>
+                </div>
 
-            </form>
-    </div>
-    
+                <div class="container-input">
+                    <!-- <span>Descreva sua necessidade de automação</span> -->
+                    <textarea name="descricao" id="desscricao" placeholder="Descreva o que você precisa na sua automação."></textarea>
+                    
+                </div>
+            </div>
+
+            <button type="submit" data-button="">Enviar</button>
+
+        </form>
     </div>
 </body>
 </html>

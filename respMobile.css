@@ -30,19 +30,37 @@
         padding: 20px;
     }
 
-    .modal {
-        padding: 20px;
-        max-width: 90%;
-        height: auto;
+    /*------------Configura o formulario------------*/
+    /* .bodyform {
+        display: flex;
+        margin: auto;
+        width: 480px;
+        height: 100vh;
     }
 
-    form input,
-    form textarea,
-    form button {
-        width: 100%; /* Tornar os inputs responsivos */
-        margin-bottom: 12px; /* Aumentar o espaçamento entre os elementos */
-        padding: 12px; /* Aumentar o espaçamento interno */
+    form {
+        display: flex;
+        margin: auto;
+        max-width: 480px; 
     }
+
+    input {
+        max-width: 480px;
+    }
+
+    .container-input textarea {
+        max-width: 480px;
+        min-width: 480px;
+    }
+
+    form button {
+        display: flex;
+        margin: auto;
+        max-width: 0px;
+        background-color: #00e1ff;
+    } */
+    /*------------Configura o formulario------------*/
+
 
     #index {
         display: block; /* Muda para layout em bloco (um item abaixo do outro) */

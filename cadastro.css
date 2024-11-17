@@ -1,83 +1,160 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+/*---------------Titulo e formulário---------------*/
+
+@media (max-width: 600px) {
+    .bodyform {
+        display: flex;
+        margin: auto;
+        width: 480px;
+        height: 100vh;
+    }
+
+    form {
+        margin: auto;
+        max-width: 480px;
+    }
+
+    input {
+        max-width: 480px;
+    }
+
+    .container-input textarea {
+        max-width: 480px;
+        min-width: 480px;
+    }
+    
+    .bodyform button {
+        max-width: 480px;
+        /* background-color: #00e1ff; */
+    }
+}
+
+.bodyform {
+    display: flex;
+    /* justify-content: center; */ /*centraliza no centro da tela*/
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: monospace;
+    color: rgb(1, 2, 2);
+    font-family: "Heebo", sans-serif;
+    
 }
 
 header h1 {
     font-family: "Kaushan Script", cursive;
 }
 
-body {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: "Heebo", sans-serif;
-}
-
-.container {
-    display: flex;
-}
-
-.form {
-    margin: 30px;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* background-color: rgba(4, 247, 247, 0.111); */
-    
-}
-
-form {
-    margin-top: 80px;
-    position: absolute;
-    /* background-color: rgba(4, 247, 247, 0.356); */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    padding-bottom: 200px;
-    padding-bottom: 100px;
-    border-radius: 8px;
-    font-size: 24px;
-    color: #fff;
-}
-
 .title{
     text-align: center;
     margin: 20px;
     color: rgb(0, 255, 213);
-    
-}
-.corpo-formulario {
-    margin-top: 100px;
+    align-items: center;
 }
 
-form input,
-form textarea,
-form button {
-    margin: auto;
-    display: block;
-    width: 800px;
-    height: 50px;
-    margin-bottom: 8px;
-    padding: 18px;
-    font-size: 18px;
+textarea {
+    max-width: 600px;
+    min-width: 600px;
+    min-height: 130px;
     border-radius: 8px;
-    
+    outline: none;
+    font-size: 18px;
+    padding: 8px;
+    background-color: #182b612e;
+    color: #fff;
+    border: solid 2px #04ffff;
+}
+
+.containerForm {
+    /* margin: auto; */
+    justify-content: center;
+    /* background-color: rgba(64, 56, 119, 0.978); */
+}
+
+.container-input {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+    /* background-color: rgb(70, 155, 81); */
+}
+
+
+
+.container-input input {
+    /* position: absolute; */
+    width: 600px;
+    height: 50px;
+    border: solid 2px #04ffff;
+    border-radius: 8px;
+    background-color: rgba(5, 17, 60, 0.383);
+    font-size: 20px;
+    color: #e7f0ef;
+    outline: none;
+    padding-left: 12px;
+}
+
+.container-input label {
+    position: absolute;
+    font-size: 18px;
+    margin: 4px;
+    left: 10px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.4s ease;
+    /* background-color: rgb(155, 155, 70); */
     
 }
+/*-------------Config de animação--------------------------------------------*/
+
+/* .container-input:focus {
+    border: none;
+    outline: 2px solid #0ce0d9;
+} */
+
+/*.textInput::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all .3s;
+} */
+
+.textInput:focus::placeholder {
+    opacity: 1;
+    animation-delay: 0.2s;
+}
+
+/* .container-input:focus + input,
+.container-input:valid + label {
+    transform: translate(2px, -21px);
+
+    
+} */
+
+
+
+
+
+
+
+/*---------------config do botão---------------*/
 
 form button {
     background-color: #182c61;
-    color: #ecf0f1;
     border: none; /* Remove as bordas pretas do botão Enviar */
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
     padding-bottom: 45px;
     font-size: 23px;
     color: rgb(250, 124, 6);
+    width: 600px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 /* Efeito hover para o botão */
@@ -90,3 +167,98 @@ input:focus, textarea:focus {
     outline-color: #182c61;
 }
 
+/*---------------config do botão---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: yellow;
+
+}
+
+.textInput {
+    padding: 0.8%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #eb7106;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s;
+    color: #1c0808;
+
+}
+
+.label::before {
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.textInput:focus {
+    border: 2px solid #b4c40c;
+}
+
+.textInput:focus+.label,
+.filled {
+    top: -14px
+    font-size: 14px;
+    
+}
+
+.textInput::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.textInput:focus::placeholder {
+    opacity: 1;
+    animation-delay: 0.2s;
+} */
