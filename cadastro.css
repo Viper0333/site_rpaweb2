@@ -12,7 +12,7 @@
         height: 100vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
-        background-color: #477878;
+        /* background-color: #477878; */
     }
 
     .title {
@@ -21,15 +21,11 @@
         font-size: 0.8rem;
     }
 
-    /* form {
+    form {
         margin: auto;
         max-width: 460px;
-    } */
-
-    form button {
-        width: 400px;
-        
     }
+
 
     .container-input input,
     .container-input textarea,
@@ -38,8 +34,8 @@
         /* margin: auto; */
         /* justify-content: center; */
         /* align-items: center; */
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 380px;
+        min-width: 380px;
     }
 
     .container-input {
