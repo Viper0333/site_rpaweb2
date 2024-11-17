@@ -9,11 +9,11 @@
     body .bodyform {
         display: flex;
         margin: auto;
-        width: 95%;
+        
         height: 100vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
-        background-color: #04ffff;
+        background-color: #477878;
     }
 
     .title {
@@ -27,23 +27,28 @@
         max-width: 460px;
     }
 
-    input {
+    .container-input input,
+    .container-input textarea {
         display: flex;
-        max-width: 460px;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+        max-width: 450px;
+        min-width: 450px;
     }
 
     .container-input {
         width: 95%;
     }
 
-    .container-input textarea {
+    /* .container-input textarea {
 
-        max-width: 460px;
-        min-width: 460px;
-    }
+        max-width: 450px;
+        min-width: 450px;
+    } */
     
     .bodyform button {
-        max-width: 460px;
+        /* max-width: 460px; */
         /* background-color: #00e1ff; */
     }
 }
