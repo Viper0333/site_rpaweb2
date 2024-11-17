@@ -43,7 +43,7 @@
 
 .bodyform {
     display: flex;
-    /* justify-content: center; */ /*centraliza no centro da tela*/
+    justify-content: center; /*centraliza no centro da tela*/
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -59,7 +59,7 @@ header h1 {
 
 .title{
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
     color: rgb(0, 255, 213);
     align-items: center;
 }
