@@ -9,7 +9,7 @@
     body .bodyform {
         display: flex;
         margin: auto;
-        height: 100vh;
+        height: 80vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
         /* background-color: #477878; */
@@ -19,7 +19,7 @@
         text-align: center;
         font-size: 0.8rem;
         /* padding-top: 50px; */
-        background-color: #477878;
+        /* background-color: #477878; */
     }
 
     form {
