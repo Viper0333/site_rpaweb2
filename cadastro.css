@@ -9,26 +9,28 @@
     .bodyform {
         display: flex;
         margin: auto;
-        width: 480px;
+        width: 460px;
         height: 100vh;
     }
 
     form {
         margin: auto;
-        max-width: 480px;
+        max-width: 460px;
     }
 
     input {
-        max-width: 480px;
+        display: flex;
+        max-width: 460px;
     }
 
     .container-input textarea {
-        max-width: 480px;
-        min-width: 480px;
+
+        max-width: 460px;
+        min-width: 460px;
     }
     
     .bodyform button {
-        max-width: 480px;
+        max-width: 460px;
         /* background-color: #00e1ff; */
     }
 }
