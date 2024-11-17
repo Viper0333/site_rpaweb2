@@ -9,7 +9,6 @@
     body .bodyform {
         display: flex;
         margin: auto;
-        
         height: 100vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
@@ -22,19 +21,25 @@
         font-size: 0.8rem;
     }
 
-    form {
+    /* form {
         margin: auto;
         max-width: 460px;
+    } */
+
+    form button {
+        width: 400px;
+        
     }
 
     .container-input input,
-    .container-input textarea {
-        display: flex;
-        margin: auto;
+    .container-input textarea,
+    form button {
+        /* display: flex; */
+        /* margin: auto; */
         /* justify-content: center; */
         /* align-items: center; */
-        max-width: 450px;
-        min-width: 450px;
+        max-width: 400px;
+        min-width: 400px;
     }
 
     .container-input {
@@ -47,6 +52,7 @@
         min-width: 450px;
     } */
     
+
     .bodyform button {
         /* max-width: 460px; */
         /* background-color: #00e1ff; */
@@ -108,7 +114,7 @@ textarea {
 
 .container-input input {
     /* position: absolute; */
-    width: 400px;
+    width: 600px;
     height: 50px;
     border: solid 2px #04ffff;
     border-radius: 8px;
@@ -171,7 +177,7 @@ form button {
     padding-bottom: 45px;
     font-size: 23px;
     color: rgb(250, 124, 6);
-    width: 400px;
+    width: 600px;
     height: 50px;
     padding: 12px;
     border-radius: 8px;
