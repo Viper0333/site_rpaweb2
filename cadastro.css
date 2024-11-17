@@ -9,7 +9,7 @@
     body .bodyform {
         display: flex;
         margin: auto;
-        width: 460px;
+        width: 95%;
         height: 100vh;
         justify-content: center; /*centraliza no centro da tela*/
         align-items: center;
